@@ -5,8 +5,53 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ImcDesktop"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Índice de Masa Corporal" Height="450" Width="315">
     <Grid>
-        
+        <StackPanel>
+            <Border Margin="8"
+         BorderThickness="1"
+             BorderBrush="LightGray">
+                <StackPanel Margin="8">
+                    <Label Content="Peso en kilogramos:"/>
+                    <TextBox Margin="4" x:Name="pesoTextBox"/>
+                    <Label Content="Estatura en metros:"/>
+                    <TextBox Margin="4" x:Name="estaturaTextBox"/>
+                    <StackPanel Orientation="Horizontal" Margin="8"
+                    HorizontalAlignment="Center">
+                        <Button Content="Calcular" Margin="8"
+                    Padding="0.5"
+                    MaxHeight="100" MinWidth="80"
+                    x:Name="calcularButton"/>
+                        <Button Content="Limpiar" Margin="8"
+                    Padding="0.5"
+                    MaxHeight="100" MinWidth="80"
+                       x:Name="limpiarButton"/>
+                    </StackPanel>
+                </StackPanel>
+            </Border>
+            <GroupBox Header="Resultados"
+                  Margin="8"
+                  BorderBrush="LightGray"
+                  BorderThickness="1">
+                <StackPanel Margin="8">
+                    <TextBlock Text="El índice de masa corporal (IMS) de la persona es:"/>
+                    <TextBlock Text="23.45" Margin="8"
+                       FontWeight="Bold"
+                       HorizontalAlignment="Center"
+                       FontSize="20"
+                       x:Name="imcTextBlock"/>
+                    <TextBlock Text="La situación nutricional de la persona es:"
+                           HorizontalAlignment="Center"/>
+                    <TextBlock Text="Peso normal" Margin="8"
+                       HorizontalAlignment="Center"
+                       FontSize="16"
+                       x:Name="situacionTextBlock"/>
+                </StackPanel>
+            </GroupBox>
+            <Button Content="Salir" Margin="8"
+                    HorizontalAlignment="Center"
+                    MinWidth="100"
+                    x:Name="salirButton"/>
+        </StackPanel>
     </Grid>
 </Window>

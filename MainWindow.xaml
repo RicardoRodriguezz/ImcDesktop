@@ -21,11 +21,11 @@
                         <Button Content="Calcular" Margin="8"
                     Padding="0.5"
                     MaxHeight="100" MinWidth="80"
-                    x:Name="calcularButton"/>
+                    x:Name="calcularButton" Click="calcularButton_Click"/>
                         <Button Content="Limpiar" Margin="8"
                     Padding="0.5"
                     MaxHeight="100" MinWidth="80"
-                       x:Name="limpiarButton"/>
+                       x:Name="limpiarButton" Click="limpiarButton_Click"/>
                     </StackPanel>
                 </StackPanel>
             </Border>
@@ -51,7 +51,7 @@
             <Button Content="Salir" Margin="8"
                     HorizontalAlignment="Center"
                     MinWidth="100"
-                    x:Name="salirButton"/>
+                    x:Name="salirButton" Click="salirButton_Click"/>
         </StackPanel>
     </Grid>
 </Window>
